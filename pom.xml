@@ -6,6 +6,15 @@
   <artifactId>ball-game</artifactId>
   <version>1.0-SNAPSHOT</version>
   <packaging>jar</packaging>
+  <developers>
+    <developer>
+      <id>Q4AFYK</id>
+      <name>Poroszlay Richárd</name>
+      <email>richardporoszlay@gmail.com</email>
+      <organization>Faculty of Informatics, University of Debrecen</organization>
+      <organizationUrl>https://www.inf.unideb.hu/</organizationUrl>
+    </developer>
+  </developers>
 
   <name>ball-game</name>
   <url>http://maven.apache.org</url>
