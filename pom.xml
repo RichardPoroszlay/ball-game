@@ -31,6 +31,7 @@
     <project.build.outputEncoding>UTF-8</project.build.outputEncoding>
     <maven.compiler.release>17</maven.compiler.release>
     <junit.jupiter.version>5.9.2</junit.jupiter.version>
+    <javafx.version>18.0.1</javafx.version>
   </properties>
 
   <dependencyManagement>
