@@ -15,6 +15,9 @@
       <organizationUrl>https://www.inf.unideb.hu/</organizationUrl>
     </developer>
   </developers>
+  <modules>
+    <module>ball-game-state</module>
+  </modules>
 
   <name>ball-game</name>
   <url>http://maven.apache.org</url>
