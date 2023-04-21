@@ -7,10 +7,9 @@
         <version>1.0-SNAPSHOT</version>
     </parent>
 
-    <artifactId>ball-game-state</artifactId>
+    <artifactId>ball-game-model</artifactId>
     <packaging>jar</packaging>
 
-    <name>ball-game-state</name>
+    <name>ball-game-model</name>
     <url>http://maven.apache.org</url>
-
 </project>

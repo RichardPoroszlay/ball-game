@@ -18,7 +18,7 @@
   </developers>
 
   <modules>
-    <module>ball-game-state</module>
+    <module>ball-game-model</module>
     <module>ball-game-controller</module>
     <module>ball-game-view</module>
   </modules>
