@@ -35,6 +35,7 @@
     <commons-lang3-version>3.13.0</commons-lang3-version>
     <log4j.version>2.20.0</log4j.version>
     <lombok.version>1.8.26</lombok.version>
+    <maven.javadoc.version>3.5.0</maven.javadoc.version>
   </properties>
 
   <dependencyManagement>
@@ -92,6 +93,11 @@
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-site-plugin</artifactId>
         <version>4.0.0-M6</version>
+      </plugin>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-javadoc-plugin</artifactId>
+        <version>${maven.javadoc.version}</version>
       </plugin>
     </plugins>
   </build>
