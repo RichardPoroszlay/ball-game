@@ -9,4 +9,8 @@ public class Field {
     private boolean wallBottom;
     private boolean wallLeft;
     private boolean wallRight;
+
+    public boolean isFinish() {
+        return this.finish;
+    }
 }
