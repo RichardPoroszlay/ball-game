@@ -12,7 +12,19 @@ public class Field {
         return this.finish;
     }
 
-    public boolean hasWall() {
-        return this.wallTop || this.wallBottom || this.wallLeft || this.wallRight;
+    public boolean hasWallTop() {
+        return this.wallTop;
+    }
+
+    public boolean hasWallBottom() {
+        return this.wallBottom;
+    }
+
+    public boolean hasWallLeft() {
+        return this.wallLeft;
+    }
+
+    public boolean hasWallRight() {
+        return this.wallRight;
     }
 }
