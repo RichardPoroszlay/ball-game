@@ -13,4 +13,8 @@ public class Field {
     public boolean isFinish() {
         return this.finish;
     }
+
+    public boolean hasWall() {
+        return this.wallTop || this.wallBottom || this.wallLeft || this.wallRight;
+    }
 }
