@@ -1,3 +1,8 @@
+import lombok.AllArgsConstructor;
+import lombok.NoArgsConstructor;
+
+@AllArgsConstructor
+@NoArgsConstructor
 public class Field {
     private boolean finish;
     private boolean wallTop;
