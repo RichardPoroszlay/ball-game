@@ -1,3 +1,5 @@
+import lombok.Data;
+
 public class Board {
     private Field[][] fields;
     private Ball ball;
@@ -45,5 +47,40 @@ public class Board {
         fields[5][2].setFinish(true);
 
         ball = new Ball(1,4);
+    }
+
+    public void moveBall(Direction direction) {
+        int newRow = ball.getRow();
+        int newCol = ball.getCol();
+
+        switch (direction) {
+            case UP -> {
+                if (ball.getRow() > 0 && !fields[ball.getRow()][ball.getCol()].hasWallTop()) {
+                    newRow--;
+                }
+            }
+            case DOWN -> {
+                if (ball.getRow() < 6 && !fields[ball.getRow()][ball.getCol()].hasWallBottom()) {
+                    newRow++;
+                }
+            }
+            case LEFT -> {
+                if (ball.getCol() > 0 && !fields[ball.getRow()][ball.getCol()].hasWallLeft()) {
+                    newCol--;
+                }
+            }
+            case RIGHT -> {
+                if (ball.getCol() < 6 && !fields[ball.getRow()][ball.getCol()].hasWallRight()) {
+                    newCol++;
+                }
+            }
+            default -> throw new IllegalStateException("Unexpected value: " + direction);
+        }
+
+        // if the ball moves, the default coordinates change
+        if(newRow != ball.getRow() && newCol != ball.getCol()) {
+            ball.setRow(newRow);
+            ball.setCol(newCol);
+        }
     }
 }
