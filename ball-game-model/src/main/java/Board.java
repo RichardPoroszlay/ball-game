@@ -1,7 +1,7 @@
 import lombok.Data;
 
 public class Board {
-    private Field[][] fields;
+    private final Field[][] fields;
     private Ball ball;
 
     public Board() {
@@ -82,5 +82,9 @@ public class Board {
             ball.setRow(newRow);
             ball.setCol(newCol);
         }
+    }
+
+    public boolean isGameOver() {
+        return fields[ball.getRow()][ball.getCol()].isFinish();
     }
 }
