@@ -1,3 +1,5 @@
+package ballgame.model;
+
 /**
  * Class representing the game board and holding the current state of the game.
  *
@@ -63,7 +65,7 @@ public class Board {
      * If the ball can't move to the chosen direction (because there is a wall or the board edge is reached),
      * then the ball doesn't move.
      *
-     * @param direction the value of this parameter is one of the four main directions from the Direction enumeration.
+     * @param direction the value of this parameter is one of the four main directions from the ballgame.model.Direction enumeration.
      * @author Richard Poroszlay
      */
     public void moveBall(Direction direction) {

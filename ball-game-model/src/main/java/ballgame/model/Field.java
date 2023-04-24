@@ -1,3 +1,5 @@
+package ballgame.model;
+
 import lombok.Data;
 
 /**

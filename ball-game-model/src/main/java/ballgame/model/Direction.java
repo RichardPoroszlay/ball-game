@@ -1,3 +1,5 @@
+package ballgame.model;
+
 /**
  * Enum, which is representing the four main directions.
  *
