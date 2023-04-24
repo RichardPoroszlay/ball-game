@@ -3,6 +3,7 @@ import lombok.Data;
 
 /**
  * Class representing the ball and its position in the game.
+ * 
  * @author Richard Poroszlay
  */
 @Data
