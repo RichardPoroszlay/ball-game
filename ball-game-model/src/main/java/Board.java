@@ -1,9 +1,18 @@
-import lombok.Data;
-
+/**
+ * Class representing the game board and holding the current state of the game.
+ *
+ * @author Richard Poroszlay
+ */
 public class Board {
     private final Field[][] fields;
     private Ball ball;
 
+    /**
+     * This constructor initializes the game board with walls,
+     * moreover it places the finish field and the ball on the board.
+     *
+     * @author Richard Poroszlay
+     */
     public Board() {
         fields = new Field[7][7];
 
@@ -49,6 +58,14 @@ public class Board {
         ball = new Ball(1,4);
     }
 
+    /**
+     * This method attempts to move the ball to the chosen direction.
+     * If the ball can't move to the chosen direction (because there is a wall or the board edge is reached),
+     * then the ball doesn't move.
+     *
+     * @param direction the value of this parameter is one of the four main directions from the Direction enumeration.
+     * @author Richard Poroszlay
+     */
     public void moveBall(Direction direction) {
         int newRow = ball.getRow();
         int newCol = ball.getCol();
@@ -84,6 +101,14 @@ public class Board {
         }
     }
 
+    /**
+     * This method checks whether the game is over or not.
+     * If the coordinates of the ball are the same with the coordinates of the finish field,
+     * then the game is over, otherwise it's not.
+     *
+     * @return the method returns true if the game is over, otherwise it returns true.
+     * @author Richard Poroszlay
+     */
     public boolean isGameOver() {
         return fields[ball.getRow()][ball.getCol()].isFinish();
     }
