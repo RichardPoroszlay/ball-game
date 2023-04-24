@@ -30,8 +30,8 @@
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <project.build.outputEncoding>UTF-8</project.build.outputEncoding>
     <maven.compiler.release>17</maven.compiler.release>
-    <junit.jupiter.version>5.9.2</junit.jupiter.version>
     <javafx.version>18.0.1</javafx.version>
+    <junit.jupiter.version>5.9.2</junit.jupiter.version>
     <commons-lang3-version>3.13.0</commons-lang3-version>
     <log4j.version>2.20.0</log4j.version>
     <lombok.version>1.18.26</lombok.version>
@@ -46,7 +46,13 @@
     <dependencies>
       <dependency>
         <groupId>org.junit.jupiter</groupId>
-        <artifactId>junit-jupiter</artifactId>
+        <artifactId>junit-jupiter-engine</artifactId>
+        <version>${junit.jupiter.version}</version>
+        <scope>test</scope>
+      </dependency>
+      <dependency>
+        <groupId>org.junit.jupiter</groupId>
+        <artifactId>junit-jupiter-params</artifactId>
         <version>${junit.jupiter.version}</version>
         <scope>test</scope>
       </dependency>
