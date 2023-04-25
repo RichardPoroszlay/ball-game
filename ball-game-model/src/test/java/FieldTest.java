@@ -25,4 +25,11 @@ public class FieldTest {
         field.setWallTop(true);
         assertTrue(field.hasWallTop());
     }
+
+    @Test
+    public void fieldShouldNotHaveWallTop() {
+        var field = new Field();
+        field.setWallTop(false);
+        assertFalse(field.hasWallTop());
+    }
 }
