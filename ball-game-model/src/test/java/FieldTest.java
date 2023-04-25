@@ -67,4 +67,11 @@ public class FieldTest {
         field.setWallRight(true);
         assertTrue(field.hasWallRight());
     }
+
+    @Test
+    public void fieldShouldNotHaveWallRight() {
+        var field = new Field();
+        field.setWallRight(false);
+        assertFalse(field.hasWallRight());
+    }
 }
