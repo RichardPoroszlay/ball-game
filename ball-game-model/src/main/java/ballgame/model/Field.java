@@ -15,6 +15,7 @@ import lombok.NoArgsConstructor;
 public class Field {
     private int row;
     private int col;
+    private boolean ballOnField;
     private boolean finish;
     private boolean wallTop;
     private boolean wallBottom;
