@@ -104,8 +104,10 @@ public class Board {
 
         // if the ball moves, the default coordinates change
         if(newRow != ball.getRow() && newCol != ball.getCol()) {
+            fields[ball.getRow()][ball.getCol()].setBallOnField(false);
             ball.setRow(newRow);
             ball.setCol(newCol);
+            fields[ball.getRow()][ball.getCol()].setBallOnField(true);
         }
     }
 
