@@ -17,6 +17,11 @@ public class Board {
      */
     public Board() {
         fields = new Field[7][7];
+        for(int row = 0; row < 7; row++) {
+            for(int col = 0; col < 7; col++) {
+                fields[row][col] = new Field(row, col);
+            }
+        }
 
         fields[0][0].setWallRight(true);
         fields[0][1].setWallLeft(true);
