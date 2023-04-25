@@ -1,6 +1,7 @@
 package ballgame.model;
 
 import lombok.Data;
+import lombok.NoArgsConstructor;
 
 /**
  * Class representing a single field on the board.
@@ -10,6 +11,7 @@ import lombok.Data;
  * @author Richard Poroszlay
  */
 @Data
+@NoArgsConstructor
 public class Field {
     private int row;
     private int col;
@@ -18,7 +20,7 @@ public class Field {
     private boolean wallBottom;
     private boolean wallLeft;
     private boolean wallRight;
-    
+
 
     /**
      * @return true, if the field is a finish field, otherwise it returns false.
