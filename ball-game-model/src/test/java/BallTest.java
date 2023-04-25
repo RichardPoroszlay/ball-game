@@ -11,5 +11,9 @@ public class BallTest {
     public void setUp() {
         Ball ball = new Ball(3,4);
     }
-    
+
+    @Test
+    public void getRow() {
+        assertEquals(3, ball.getRow());
+    }
 }
