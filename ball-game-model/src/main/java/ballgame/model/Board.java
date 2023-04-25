@@ -63,6 +63,7 @@ public class Board {
         fields[5][2].setFinish(true);
 
         ball = new Ball(1,4);
+        fields[ball.getRow()][ball.getCol()].setBallOnField(true);
     }
 
     /**
