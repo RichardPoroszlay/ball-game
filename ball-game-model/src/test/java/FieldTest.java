@@ -5,6 +5,13 @@ import static org.junit.jupiter.api.Assertions.*;
 
 public class FieldTest {
     @Test
+    public void ballShouldBeOnField() {
+        var field = new Field();
+        field.setBallOnField(true);
+        assertTrue(field.isBallOnField());
+    }
+    
+    @Test
     public void finishFieldShouldBeTrue() {
         var field = new Field();
         field.setFinish(true);
