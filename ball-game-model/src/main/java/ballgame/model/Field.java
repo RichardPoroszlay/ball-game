@@ -11,11 +11,14 @@ import lombok.Data;
  */
 @Data
 public class Field {
+    private int row;
+    private int col;
     private boolean finish;
     private boolean wallTop;
     private boolean wallBottom;
     private boolean wallLeft;
     private boolean wallRight;
+    
 
     /**
      * @return true, if the field is a finish field, otherwise it returns false.
