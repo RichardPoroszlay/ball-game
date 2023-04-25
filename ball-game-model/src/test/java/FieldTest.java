@@ -18,4 +18,11 @@ public class FieldTest {
         field.setFinish(false);
         assertFalse(field.isFinish());
     }
+
+    @Test
+    public void fieldShouldHaveWallTop() {
+        var field = new Field();
+        field.setWallTop(true);
+        assertTrue(field.hasWallTop());
+    }
 }
