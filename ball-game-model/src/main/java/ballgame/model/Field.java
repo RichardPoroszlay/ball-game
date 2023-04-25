@@ -21,6 +21,10 @@ public class Field {
     private boolean wallLeft;
     private boolean wallRight;
 
+    public Field(int row, int col) {
+        this.row = row;
+        this.col = col;
+    }
 
     /**
      * @return true, if the field is a finish field, otherwise it returns false.
