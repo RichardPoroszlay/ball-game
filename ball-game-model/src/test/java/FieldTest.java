@@ -46,4 +46,11 @@ public class FieldTest {
         field.setWallBottom(false);
         assertFalse(field.hasWallBottom());
     }
+
+    @Test
+    public void fieldShouldHaveWallLeft() {
+        var field = new Field();
+        field.setWallLeft(true);
+        assertTrue(field.hasWallLeft());
+    }
 }
