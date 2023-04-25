@@ -13,12 +13,12 @@ public class BallTest {
     }
 
     @Test
-    public void getRow() {
+    public void testGetRow() {
         assertEquals(3, ball.getRow());
     }
 
     @Test
-    public void getCol() {
+    public void testGetCol() {
         assertEquals(4, ball.getCol());
     }
 }
