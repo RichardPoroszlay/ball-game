@@ -60,4 +60,11 @@ public class FieldTest {
         field.setWallLeft(false);
         assertFalse(field.hasWallLeft());
     }
+
+    @Test
+    public void fieldShouldHaveWallRight() {
+        var field = new Field();
+        field.setWallRight(true);
+        assertTrue(field.hasWallRight());
+    }
 }
