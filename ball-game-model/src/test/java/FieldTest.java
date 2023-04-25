@@ -10,7 +10,14 @@ public class FieldTest {
         field.setBallOnField(true);
         assertTrue(field.isBallOnField());
     }
-    
+
+    @Test
+    public void ballShouldNotBeOnField() {
+        var field = new Field();
+        field.setBallOnField(false);
+        assertFalse(field.isBallOnField());
+    }
+
     @Test
     public void finishFieldShouldBeTrue() {
         var field = new Field();
