@@ -9,7 +9,7 @@ public class BallTest {
 
     @BeforeEach
     public void setUp() {
-        Ball ball = new Ball(3,4);
+        ball = new Ball(3,4);
     }
 
     @Test
