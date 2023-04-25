@@ -21,4 +21,10 @@ public class BallTest {
     public void testGetCol() {
         assertEquals(4, ball.getCol());
     }
+
+    @Test
+    public void testSetRow() {
+        ball.setRow(2);
+        assertEquals(2, ball.getRow());
+    }
 }
