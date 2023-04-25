@@ -30,7 +30,7 @@ public class BallTest {
 
     @Test
     public void testSetCol() {
-        ball.setRow(5);
+        ball.setCol(5);
         assertEquals(5, ball.getCol());
     }
 }
