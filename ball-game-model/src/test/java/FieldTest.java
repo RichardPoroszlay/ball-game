@@ -11,4 +11,11 @@ public class FieldTest {
         field.setFinish(true);
         assertTrue(field.isFinish());
     }
+
+    @Test
+    public void finishFieldShouldBeFalse() {
+        var field = new Field();
+        field.setFinish(false);
+        assertFalse(field.isFinish());
+    }
 }
