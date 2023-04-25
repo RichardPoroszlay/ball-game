@@ -28,6 +28,13 @@ public class Field {
     }
 
     /**
+     *
+     * @return true, if the ball is on the field, otherwise it returns false.
+     * @author Richard Poroszlay
+     */
+    public boolean isBallOnField() { return this.ballOnField; }
+
+    /**
      * @return true, if the field is a finish field, otherwise it returns false.
      * @author Richard Poroszlay
      */
