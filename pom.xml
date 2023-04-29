@@ -19,8 +19,7 @@
 
   <modules>
     <module>ball-game-model</module>
-    <module>ball-game-controller</module>
-    <module>ball-game-view</module>
+    <module>ball-game-gui</module>
   </modules>
 
   <name>ball-game</name>
