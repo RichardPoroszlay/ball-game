@@ -16,12 +16,7 @@
       <organizationUrl>https://www.inf.unideb.hu/</organizationUrl>
     </developer>
   </developers>
-
-  <modules>
-    <module>ball-game-model</module>
-    <module>ball-game-gui</module>
-  </modules>
-
+  
   <name>ball-game</name>
   <url>http://maven.apache.org</url>
 
