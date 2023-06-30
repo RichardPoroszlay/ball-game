@@ -1,6 +1,11 @@
 package ballgame.model;
 
 
+/**
+ * Class representing the game board and holding the current state of the game.
+ *
+ * @author Richard Poroszlay
+ */
 public class Board {
 
     public static int BOARD_SIZE = 7;
@@ -8,6 +13,12 @@ public class Board {
     private final Field[][] board = new Field[BOARD_SIZE][BOARD_SIZE];
     private int stepCounter;
 
+    /**
+     * This constructor initializes the game board with walls,
+     * moreover it places the finish field and the ball on the board.
+     *
+     * @author Richard Poroszlay
+     */
     public Board() {
         for (int row = 0; row < BOARD_SIZE; row++) {
             for (int col = 0; col < BOARD_SIZE; col++) {
@@ -59,6 +70,14 @@ public class Board {
         stepCounter = 0;
     }
 
+    /**
+     * This method attempts to move the ball to the chosen direction.
+     * If the ball can't move to the chosen direction (because there is a wall or the board edge is reached),
+     * then the ball doesn't move.
+     *
+     * @param direction the value of this parameter is one of the four main directions from the ballgame.model.Direction enum
+     * @author Richard Poroszlay
+     */
     public void moveBall(Direction direction) {
         int newRow = ball.getRow();
         int newCol = ball.getCol();
@@ -121,22 +140,53 @@ public class Board {
         }
     }
 
+    /**
+     * This method returns the X coordinate of the ball on the board.
+     *
+     * @return it returns the X coordinate of the ball on the board.
+     * @author Richard Poroszlay
+     */
     public int getBallX() {
         return ball.getRow();
     }
 
+    /**
+     * This method returns the Y coordinate of the ball on the board.
+     *
+     * @return it returns the Y coordinate of the ball on the board.
+     * @author Richard Poroszlay
+     */
     public int getBallY() {
         return ball.getCol();
     }
 
+    /**
+     * This method adds one to the step counter.
+     *
+     * @author Richard Poroszlay
+     */
     public void addOneToStepCounter() {
         stepCounter += 1;
     }
 
+    /**
+     * This method returns the number of steps.
+     *
+     * @return the amount of steps
+     * @author Richard Poroszlay
+     */
     public int getStepCounter() {
         return stepCounter;
     }
 
+    /**
+     * This method checks whether the game is over or not.
+     * If the coordinates of the ball are the same with the coordinates of the finish field,
+     * then the game is over, otherwise it's not.
+     *
+     * @return the method returns true if the game is over, otherwise it returns false.
+     * @author Richard Poroszlay
+     */
     public boolean isGameOver() {
         return board[ball.getRow()][ball.getCol()].isFinish();
     }
