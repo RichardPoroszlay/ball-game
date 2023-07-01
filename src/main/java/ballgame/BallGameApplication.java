@@ -8,7 +8,11 @@ import javafx.stage.Stage;
 
 import java.io.IOException;
 
-
+/**
+ * This class set the initial scene up for the user.
+ *
+ * @author Richard Poroszlay
+ */
 public class BallGameApplication extends Application {
 
     @Override
