@@ -1,0 +1,1 @@
+package ballgame.result;
