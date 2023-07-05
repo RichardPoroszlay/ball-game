@@ -1,14 +1,92 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
 
-<AnchorPane xmlns="http://javafx.com/javafx"
-            xmlns:fx="http://javafx.com/fxml"
-            fx:controller="Ui"
-            prefHeight="400.0" prefWidth="600.0">
-
-</AnchorPane>
+<GridPane fx:id="grid" gridLinesVisible="true" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ballgame.BallGameController">
+    <columnConstraints>
+        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+    </columnConstraints>
+    <rowConstraints>
+        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+    </rowConstraints>
+    <children>
+        <Region prefHeight="200.0" prefWidth="200.0" styleClass="wall-left-top-right" />
+        <Region prefHeight="200.0" prefWidth="200.0" styleClass="wall-top-left" GridPane.columnIndex="1" />
+        <Region prefHeight="200.0" prefWidth="200.0" styleClass="wall-top-bottom" GridPane.columnIndex="2" />
+        <Region prefHeight="200.0" prefWidth="200.0" styleClass="wall-top-right" GridPane.columnIndex="3" />
+        <Region prefHeight="200.0" prefWidth="200.0" styleClass="wall-top-left" GridPane.columnIndex="4" />
+        <Region prefHeight="200.0" prefWidth="200.0" styleClass="wall-top" GridPane.columnIndex="5" />
+        <Region prefHeight="200.0" prefWidth="200.0" styleClass="wall-top-right-bottom" GridPane.columnIndex="6" />
+        <Region prefHeight="200.0" prefWidth="200.0" styleClass="wall-left" GridPane.rowIndex="1" />
+        <Region prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+        <Region prefHeight="200.0" prefWidth="200.0" styleClass="wall-top" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+        <Region prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="3" GridPane.rowIndex="1" />
+        <Region prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="4" GridPane.rowIndex="1" />
+        <Region prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="5" GridPane.rowIndex="1" />
+        <Region prefHeight="200.0" prefWidth="200.0" styleClass="wall-top-right" GridPane.columnIndex="6" GridPane.rowIndex="1" />
+        <Region prefHeight="200.0" prefWidth="200.0" styleClass="wall-left" GridPane.rowIndex="2" />
+        <Region prefHeight="200.0" prefWidth="200.0" styleClass="wall-bottom" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+        <Region prefHeight="200.0" prefWidth="200.0" styleClass="wall-right" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+        <Region prefHeight="200.0" prefWidth="200.0" styleClass="wall-left" GridPane.columnIndex="3" GridPane.rowIndex="2" />
+        <Region prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="4" GridPane.rowIndex="2" />
+        <Region prefHeight="200.0" prefWidth="200.0" styleClass="wall-right" GridPane.columnIndex="5" GridPane.rowIndex="2" />
+        <Region prefHeight="200.0" prefWidth="200.0" styleClass="wall-left-right" GridPane.columnIndex="6" GridPane.rowIndex="2" />
+        <Region prefHeight="200.0" prefWidth="200.0" styleClass="wall-left" GridPane.rowIndex="3" />
+        <Region prefHeight="200.0" prefWidth="200.0" styleClass="wall-top" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+        <Region prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+        <Region prefHeight="200.0" prefWidth="200.0" styleClass="wall-bottom-right" GridPane.columnIndex="3" GridPane.rowIndex="3" />
+        <Region prefHeight="200.0" prefWidth="200.0" styleClass="wall-left-right" GridPane.columnIndex="4" GridPane.rowIndex="3" />
+        <Region prefHeight="200.0" prefWidth="200.0" styleClass="wall-left" GridPane.columnIndex="5" GridPane.rowIndex="3" />
+        <Region prefHeight="200.0" prefWidth="200.0" styleClass="wall-bottom-right" GridPane.columnIndex="6" GridPane.rowIndex="3" />
+        <Region prefHeight="200.0" prefWidth="200.0" styleClass="wall-bottom-left" GridPane.rowIndex="4" />
+        <Region prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+        <Region prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.rowIndex="4" />
+        <Region prefHeight="200.0" prefWidth="200.0" styleClass="wall-top" GridPane.columnIndex="3" GridPane.rowIndex="4" />
+        <Region prefHeight="200.0" prefWidth="200.0" styleClass="wall-bottom" GridPane.columnIndex="4" GridPane.rowIndex="4" />
+        <Region prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="5" GridPane.rowIndex="4" />
+        <Region prefHeight="200.0" prefWidth="200.0" styleClass="wall-top-right" GridPane.columnIndex="6" GridPane.rowIndex="4" />
+        <Region prefHeight="200.0" prefWidth="200.0" styleClass="wall-top-left" GridPane.rowIndex="5" />
+        <Region prefHeight="200.0" prefWidth="200.0" styleClass="wall-right" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+        <Region prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: lightgrey;" styleClass="wall-left-bottom-right" GridPane.columnIndex="2" GridPane.rowIndex="5" />
+        <Region prefHeight="200.0" prefWidth="200.0" styleClass="wall-left" GridPane.columnIndex="3" GridPane.rowIndex="5" />
+        <Region prefHeight="200.0" prefWidth="200.0" styleClass="wall-top" GridPane.columnIndex="4" GridPane.rowIndex="5" />
+        <Region prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="5" GridPane.rowIndex="5" />
+        <Region prefHeight="200.0" prefWidth="200.0" styleClass="wall-right" GridPane.columnIndex="6" GridPane.rowIndex="5" />
+        <Region prefHeight="200.0" prefWidth="200.0" styleClass="wall-bottom-left" GridPane.rowIndex="6" />
+        <Region prefHeight="200.0" prefWidth="200.0" styleClass="wall-bottom" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+        <Region prefHeight="200.0" prefWidth="200.0" styleClass="wall-top-bottom" GridPane.columnIndex="2" GridPane.rowIndex="6" />
+        <Region prefHeight="200.0" prefWidth="200.0" styleClass="wall-bottom-right" GridPane.columnIndex="3" GridPane.rowIndex="6" />
+        <Region prefHeight="200.0" prefWidth="200.0" styleClass="wall-bottom-left" GridPane.columnIndex="4" GridPane.rowIndex="6" />
+        <Region prefHeight="200.0" prefWidth="200.0" styleClass="wall-bottom-right" GridPane.columnIndex="5" GridPane.rowIndex="6" />
+        <Region prefHeight="200.0" prefWidth="200.0" styleClass="wall-left-bottom-right" GridPane.columnIndex="6" GridPane.rowIndex="6" />
+        <Label alignment="CENTER" prefHeight="40.0" prefWidth="95.0" text="CÉL" GridPane.columnIndex="2" GridPane.rowIndex="5">
+            <font>
+                <Font size="33.0" />
+            </font>
+        </Label>
+        <Circle fx:id="myCircle" fill="DODGERBLUE" radius="45.0" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="4" GridPane.rowIndex="1">
+            <GridPane.margin>
+                <Insets left="5.0" />
+            </GridPane.margin>
+        </Circle>
+    </children>
+</GridPane>
