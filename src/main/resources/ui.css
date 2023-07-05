@@ -1,0 +1,77 @@
+.wall-left-top-right {
+    -fx-border-style: solid solid hidden solid;
+    -fx-border-width: 5;
+    -fx-border-color: black;
+}
+
+.wall-left-bottom-right {
+    -fx-border-style: hidden solid solid solid;
+    -fx-border-width: 5;
+    -fx-border-color: black;
+}
+
+.wall-left-right {
+    -fx-border-style: hidden solid hidden solid;
+    -fx-border-width: 5;
+    -fx-border-color: black;
+}
+
+.wall-top-bottom {
+    -fx-border-style: solid hidden solid hidden;
+    -fx-border-width: 5;
+    -fx-border-color: black;
+}
+
+.wall-top-right-bottom {
+    -fx-border-style: solid solid solid hidden;
+    -fx-border-width: 5;
+    -fx-border-color: black;
+}
+
+.wall-top-right {
+    -fx-border-style: solid solid hidden hidden;
+    -fx-border-width: 5;
+    -fx-border-color: black;
+}
+
+.wall-top-left {
+    -fx-border-style: solid hidden hidden solid;
+    -fx-border-width: 5;
+    -fx-border-color: black;
+}
+
+.wall-bottom-right {
+    -fx-border-style: hidden solid solid hidden;
+    -fx-border-width: 5;
+    -fx-border-color: black;
+}
+
+.wall-bottom-left {
+    -fx-border-style: hidden hidden solid solid;
+    -fx-border-width: 5;
+    -fx-border-color: black;
+}
+
+.wall-top {
+    -fx-border-style: solid hidden hidden hidden;
+    -fx-border-width: 5;
+    -fx-border-color: black;
+}
+
+.wall-left {
+    -fx-border-style: hidden hidden hidden solid;
+    -fx-border-width: 5;
+    -fx-border-color: black;
+}
+
+.wall-bottom {
+    -fx-border-style: hidden hidden solid hidden;
+    -fx-border-width: 5;
+    -fx-border-color: black;
+}
+
+.wall-right {
+    -fx-border-style: hidden solid hidden hidden;
+    -fx-border-width: 5;
+    -fx-border-color: black;
+}
